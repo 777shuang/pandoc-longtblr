@@ -13,3 +13,6 @@ pandoc --filter pandoc-table-attr.py --lua-filter longtblr.lua input.md -o outpu
 
 [pandoc-table-attr](https://github.com/rnwst/pandoc-table-attr) must be loaded before `longtblr.lua`<br>
 [pandoc-table-attr](https://github.com/rnwst/pandoc-table-attr)は`longtblr.lua`より先に読み込む必要があります
+
+If you use pandoc-crossref, `longtblr.lua` must be loaded before.<br>
+pandoc-crossrefを使う場合、`longtblr.lua`は先に読み込む必要があります
