@@ -1,3 +1,10 @@
+function RawInline(el)
+    if el.format == "html" and el.text == "<br>" then
+        return pandoc.LineBreak()
+    end
+    return el
+end
+
 function LaTeX(text)
     return pandoc.RawInline("latex", text)
 end
